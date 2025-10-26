@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QR Code Component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body styling */
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: hsl(212, 45%, 89%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    /* Card container */
+    .card {
+      background-color: hsl(0, 0%, 100%);
+      width: 320px;
+      border-radius: 20px;
+      text-align: center;
+      padding: 16px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    /* QR image */
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    /* Title */
+    .card h1 {
+      color: hsl(218, 44%, 22%);
+      font-size: 22px;
+      margin: 15px 0;
+    }
+
+    /* Paragraph */
+    .card p {
+      color: hsl(220, 15%, 55%);
+      font-size: 15px;
+      padding: 0 10px 20px;
+    }
+
+    /* Responsive design */
+    @media (max-width: 400px) {
+      .card {
+        width: 90%;
+        padding: 12px;
+      }
+
+      .card h1 {
+        font-size: 18px;
+      }
+
+      .card p {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/frontendmentor/qr-code-component-main/master/images/image-qr-code.png" alt="QR code" />
+    <h1>Improve your front-end skills by building projects</h1>
+    <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+  </div>
+</body>
+</html>
